@@ -1,0 +1,195 @@
+:root {
+  --accent: #00ebff;
+  --bg: #0b0e14;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+body {
+  background-color: var(--bg);
+  color: #e0e0e0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+.navbar {
+  position: fixed;
+  background: #050507a4;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 100%;
+  z-index: 2;
+  width: 150px;
+
+}
+.navbar_buttons{
+  margin-top: 10vw;
+  color: #f1f1f1;
+display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 100px 100px 50px;
+  gap: 50px 10px;
+  justify-items: center;
+  height: 100%;
+
+  transition: transform 0.3s ease;
+}
+.navbar_buttons a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: -large;
+  text-decoration: none;
+  height: fit-content;
+}
+.navbar_buttons a:hover {
+  color: white;
+  font: athelas;
+  text-decoration: none;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+.active {
+  font-size: larger;
+  transition: 1s;
+  border-bottom: 1px solid;
+}
+
+.links_main{
+    display: flex;
+    justify-content: center;
+
+    gap: 1%;
+    display: flex;
+
+}
+.links_main a{
+    display: block;
+    margin-inline: 1%;
+}
+.category-tag {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container {
+  max-width: 1000px;
+  margin:  0 auto;
+  padding: 0 20px;
+}
+
+.back-btn {
+  color: white;
+}
+
+.project-hero {
+  padding: 20px 0 40px;
+  background: linear-gradient(to bottom, rgba(0, 235, 255, 0.1), transparent);
+  text-align: center;
+}
+
+.category-tag {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+.sidebar img{
+   border-radius: 20%;
+   width: 85%;
+   margin-left: 8%;
+   margin-top: 5%;
+}
+.side-block {
+  background: var(--glass);
+  margin-top:20%;
+  
+  border-radius: 12px;
+
+
+}
+
+@media (max-width: 700px) {
+
+
+  @media (max-width: 768px) {
+
+    .project-hero {
+      padding: 60px 0 30px;
+    }
+
+    .project-hero h1 {
+      font-size: 1.8rem;}
+    .stats-grid {
+      grid-template-columns: 1fr;
+      margin: 0 0 30px 0;
+    }
+
+    /* 3. Stack the Main Content and Sidebar */
+    .content-layout {
+      grid-template-columns: 1fr; /* Force single column */
+      gap: 20px;
+    }
+
+    /* 4. Move the Sidebar below the main text */
+    .sidebar {
+      order: 2;
+    }
+
+    .main-text {
+      order: 1;
+    }
+
+    /* 5. Adjust Images for Mobile */
+    .image-box img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 6. Make Navigation easier to touch */
+    .back-btn {
+      padding: 10px 15px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  .criteria-table thead {
+    display: none; /* Hide header on mobile */
+  }
+  .criteria-table,
+  .criteria-table tbody,
+  .criteria-table tr,
+  .criteria-table td {
+    display: block;
+  }
+  .criteria-table tr {
+    margin-bottom: 1rem;
+    background: #ffffff00;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .criteria-table td {
+    border: none;
+    padding: 8px 5px;
+    position: relative;
+  }
+  .criteria-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 3px;
+  }
+}
