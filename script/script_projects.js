@@ -196,7 +196,7 @@ fetch(
         el.onmouseover = () => console.log("Hovering over " + d.name);
         el.onclick = () => {
           world.controls().autoRotate = false;
-          p_card.style.left = "100px";
+          p_card.style.left = "180px";
           document.getElementById("projects_card").classList.add("active");
 
           document.getElementById(
