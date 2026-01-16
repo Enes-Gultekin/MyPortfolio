@@ -9,6 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   margin: 0;
+  font-size: large;
 }
 .navbar {
   position: fixed;
@@ -114,7 +115,7 @@ display: grid;
 .side-block {
   background: var(--glass);
   margin-top:20%;
-  
+
   border-radius: 12px;
 
 
