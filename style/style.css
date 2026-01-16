@@ -194,3 +194,102 @@ display: grid;
     margin-bottom: 3px;
   }
 }
+/* --- Resume Specific Styles --- */
+
+.main {
+    padding-bottom: 50px;
+}
+
+.section {
+    margin-bottom: 40px;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.section h3 {
+    color: var(--accent);
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--glass);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Project Cards */
+.project {
+    background: var(--glass);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.project h4 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* List Styling */
+.section ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.section li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Custom Bullet Points */
+.section li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.skill {
+    display: inline-block;
+    background: rgba(0, 235, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 235, 255, 0.2);
+}
+
+.skill::before {
+    display: none; /* Remove bullets for skill pills */
+}
+
+/* Education Layout */
+.education {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.education h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.education p {
+    margin: 2px 0;
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
+
+/* Simple Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
