@@ -44,7 +44,7 @@ const myData = [
     description:
       "This project utilizes the Revised Universal Soil Loss Equation (RUSLE) to assess soil erosion risks in West Kenya. By analyzing key factors such as rainfall patterns, soil characteristics, topography, land cover, and conservation practices, the study estimates erosion rates and identifies vulnerable areas. The findings provide valuable insights for sustainable land management and erosion control strategies, helping to mitigate soil degradation and promote environmental conservation.",
     tags: ["RUSLE Modeling", "Soil Erosion", "Environmental GIS", "Hydrology"],
-    link: "https://storymaps.arcgis.com/stories/a5f12c45dcb843cbaeaaba49c35c140a",
+    link: "https://storymaps.arcgis.com/stories/90ef7ef489a3421f9cc6029c1d396757",
     git: "cons.html",
   },
   {
@@ -92,7 +92,7 @@ const myData = [
   {
     lat: 41.02365621207687,
     lng: -3.596563756253431,
-    name: "Spain",
+    name: "Spain, Portugal",
     title: "Syndromes of Land Change in the Iberian Peninsula",
     url: " data/spain_border.geojson",
     color: "yellow",
